@@ -1,125 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,700;1,100&display=swap");
-
-* {
-    font-family: "Outfit", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    padding: 0%;
+    margin: 0%;
 }
+.footer-box{
+    bottom: 0%;
+    height: 130px;
+    position: sticky;
+    background-color: gray;
+    color: antiquewhite;
+    
+    
 
-body {
-    background: aliceblue;
-    margin: 0;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+    
 }
-
-footer {
-    background: #18181b;
-    display: block;
-}
-
-a {
-    color: #adb5bd;
-    text-decoration: none;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.flex-column {
-    flex-direction: column !important;
-}
-
-.min-vh-100 {
-    min-height: 100vh !important;
-}
-
-.d-flex {
-    display: flex !important;
-}
-
-.pb-2 {
-    padding-bottom: 0.5rem !important;
-}
-
-.pt-4 {
-    padding-top: 1.5rem !important;
-}
-
-.mt-auto {
-    margin-top: auto !important;
-}
-
-.text-center {
-    text-align: center !important;
-}
-
-.text-muted {
-    opacity: 1;
-    color: #6c757d !important;
-    /* color: #adb5bd!important; */
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-    --bs-gutter-x: 1.5rem;
-    width: 100%;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-.col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .col-md-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+.center{
+    text-align: center;
+    padding: 50px;
 }
