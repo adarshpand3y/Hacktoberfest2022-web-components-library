@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1 {
+        background-color: white;
+        width: 120px;
+        height: 100px;
+        margin: 25px;
+        padding: 20px;
+        text-align: center;
+        /* border: 11px solid gray; */
+        border-radius: 17px;
+        border: 5px solid rgb(214, 11, 146);
+
+    }
+
+    .box2 {
+        background-color: white;
+        width: 120px;
+        height: 100px;
+        margin: 25px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 17px;
+        border: 5px solid rgb(214, 11, 146);
+
+    }
+
+    .box3 {
+        background-color: white;
+        width: 120px;
+        height: 100px;
+        margin: 25px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 17px;
+        border: 5px solid rgb(214, 11, 146);
+
+
+    }
+
+    .box4 {
+        background-color: white;
+        width: 120px;
+        height: 100px;
+        margin: 25px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 17px;
+        border: 5px solid rgb(214, 11, 146);
+
+    }
+
+    .container {
+        /* background-color:rgb(173, 17, 173); */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* flex-wrap: wrap; */
+        height: 100vh;
+       
+    }
+
+    h1 {
+        font-size: 50px;
+        color: blue;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        color: rgb(214, 11, 146);
+    }
+
+    .head {
+        height: 4vh;
+        text-align: center;
+        justify-content: center;
+        font-size: 90px;
+    }
+
+    .back {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+</style>
+
+<body>
+    <div class="back">
+        <div class="head">
+            <h3><i><u>DIGITAL CLOCK</u></i></h3>
+        </div>
+
+        <div class="container">
+
+            <div class="box1">
+                <h1 id="hours">10</h1>
+                <h2>Hours</h2>
+            </div>
+
+            <div class="box3">
+                <h1 id="minutes">10</h1>
+                <h2>Minutes</h2>
+            </div>
+            <div class="box2">
+                <h1 id="seconds">10</h1>
+                <h2>Seconds</h2>
+
+            </div>
+            <div class="box4">
+                <h1 id="amorpm">10</h1>
+                <h2>am/pm</h>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let digitalClock = () => {
+
+            let date = new Date();
+
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            if (hours > 12) {
+                hours = (hours - 12);
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+
+            let amorpm = hours >= 12 ? 'pm' : 'am';
+
+
+
+
+
+
+
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("amorpm").innerHTML = amorpm;
+
+            setTimeout(digitalClock, 500);
+
+        }
+
+        digitalClock();
+    </script>
+</body>
+
+</html>
