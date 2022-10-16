@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>night mode</title>
+    <style>
+        body {
+            background-color: white;
+            transition: background-color 1.5s;
+        }
+
+        .night-mode {
+            background-color: black;
+            color: red;
+            transition: background-color 1.5s;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* CSS */
+        .button-6 {
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .button-6:hover,
+        .button-6:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .button-6:hover {
+            transform: translateY(-1px);
+        }
+
+        .button-6:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center">Profile</h1>
+
+    <div class="button">
+        <button class="button-6" role="button" id="day-night" onclick="darkmode()">Button</button>
+    </div>
+
+    <script>
+        function darkmode() {
+            var element = document.body;
+            element.classList.toggle("night-mode");
+        }
+        function pink() {
+            var element = document.getElementById('content');
+            element.classList.add('color1');
+        }
+        function green() {
+            var element = document.getElementById('content');
+            element.classList.add('color2');
+        }
+        function yellow() {
+            var element = document.getElementById('content');
+            element.classList.add('color3');
+        }
+    </script>
+</body>
+
+</html>
