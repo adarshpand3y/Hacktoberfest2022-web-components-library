@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 3s;
+   
+
+}
+
+
+.accordian{
+    width: 25%;
+   
+  margin: 210px;
+ display: flex;
+
+  gap: 2rem;
+}
+.item{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 30px 200px 30px;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+.shown-class{
+    font-weight: 15px;
+    grid-column: 2/3;
+}
+.number{
+    font-size: 30px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    color: rgb(87, 87, 198);
+}
+h2{
+    text-transform: capitalize;
+}
+.hidden-box{
+    grid-column: 2/3;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    display: none;
+}
+ul{
+    margin-top: 20px;
+}
+.active .hidden-box{
+    display: block;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid lightblue;
+}
+.imgflex{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+flex-direction: column;
+}
+.img1{
+    height: 138px;
+    border-radius: 50%;
+}
+.bold{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.title{
+    margin-top: 70px;
+    font-size: 28px;
+    font-weight: 20px;
+    text-align: center;
+}
