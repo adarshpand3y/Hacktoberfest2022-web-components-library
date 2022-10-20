@@ -25,3 +25,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+
+.navbar{
+backgraound:#9ffa93;
+}
