@@ -1,69 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
+.container{
+    text-align: center;
+    margin-top:23px
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;         
-    line-height: 2;
-	font-size: 20px;
-    color:#000000;
-    margin:0;
-    padding: 0;
-    background: linear-gradient(90deg, rgba(0,170,254,1) 0%, rgba(0,255,107,1) 100%);
+table{
+    margin: auto;
 }
 
-.container {
-    height: 85vh;
-    width: 32vw;
-    border: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    background-color: #bff4ee;
-    margin: 30px auto;
+input{
+    border-radius: 21px;
+    border: 5px solid #244624;
+    font-size:34px;
+    height: 65px;
+    width: 456px;
 }
 
-.display {
-    background-color: black;
-    color: white;
-    height: 30%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+button{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #978fa0;
+    width: 102px;
+    height: 90px;
+    margin: 6px;
 }
 
-.content {
-    padding: 5px;
+.calculator{ 
+    border: 4px solid #13695d;
+    background-color: #ff99f7;
+    padding: 23px;
+    border-radius: 53px;
+    display: inline-block;
+    
 }
 
-.row {
-    height: 14%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.btn {
-    background: transparent;
-    height: 100%;
-    width: 25%;
-    padding: 5px;
-    font-size: 16px;
-    border: 2px solid white;
-}
-
-.eql-btn, .ac-btn {
-    background: transparent;
-    height: 100%;
-    width: 50%;
-    padding: 5px;
-    font-size: 16px;
-    border: 2px solid white;
-}
-
-.btn:hover, .eql-btn:hover, .ac-btn:hover {
-    background-color: #e2faf8;
+h1{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
 }
