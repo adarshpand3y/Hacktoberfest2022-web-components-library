@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List!</title>
+  </head>
+  <body>
+    <h1><i class="fa-solid fa-clipboard-list"></i> Todo List App</h1>
+    <div id="container">
+      <input
+        placeholder="Add a task"
+        class="add-task"
+        id="add"
+        data-helloWord="asdasdas"
+      />
+
+      <ul id="list">
+        <!-- <li>
+          <input
+            type="checkbox"
+            id="task1"
+            data-id="1541566556"
+            class="custom-checkbox"
+          />
+          <label for="task1">Buy groceries</label>
+          <i class="fa-sharp fa-solid fa-trash delete"></i>
+        </li> -->
+      </ul>
+      <div class="task-list">
+        <span id="total-tasks"
+          >Total tasks: <span id="tasks-counter">0</span></span
+        >
+        <div class="task-completed-container">
+          <div class="wrapper">
+            <span id="tasks-remaining">0</span> /
+            <span id="tasks-counter">0</span>
+          </div>
+          <div class="percentage-bar"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/15628b64e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

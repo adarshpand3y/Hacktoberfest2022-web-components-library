@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1b2430;
+  color: #816797;
+}
+
+#container {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #51557e;
+  padding: 15px 15px 2px 15px;
+  border-radius: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  color: #d6d5a8;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+ul li:hover {
+  background: #3d405d;
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  border-color: #d6d5a8;
+}
+
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #fec260;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #555;
+}
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 28px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.add-task {
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 3px;
+}
+#total-tasks,
+.task-list {
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 2px;
+  color: #d6d5a8;
+}
+
+.task-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.task-completed-container {
+  background-color: #816797;
+  width: 5rem;
+  height: 100%;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.percentage-bar {
+  width: 0%;
+  height: inherit;
+  border-radius: inherit;
+  background-color: #3d2c8d;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
+
+.delete {
+  color: #ff4949;
+}
+
+.delete:hover {
+  background-color: transparent;
+}
