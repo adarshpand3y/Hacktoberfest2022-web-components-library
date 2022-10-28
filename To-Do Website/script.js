@@ -3,6 +3,7 @@ const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
+
 // onkeyup event
 inputBox.onkeyup = ()=>{
   let userEnteredValue = inputBox.value; //getting user entered value
@@ -42,7 +43,7 @@ function showTasks(){
   }
   let newLiTag = "";
   listArray.forEach((element, index) => {
-    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
+    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="material-symbols-outlined">cancel</i></span></li>`;
   });
   todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
   inputBox.value = ""; //once task added leave the input field blank
@@ -60,4 +61,7 @@ deleteAllBtn.onclick = ()=>{
   listArray = []; //empty the array
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
+
 }
+
+console.log("Changes made in To-Do website");
