@@ -10,17 +10,29 @@
 <body>
     
 	<div class="container">
-        <h1>MY REGISTRATION PAGE:</h1>
+        <h1>MY REGISTRATION PAGE</h1>
         <form action="noaction.php" >
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your name:">
                 <input type="text" name="" placeholder="Enter your age:">
                 <input type="text" name="" placeholder="Enter your occupation:">
                 <input type="text" name="" placeholder="Enter your workPlace:">
-<button class="btn">SUBMIT</button>
-<button class="btn">CLEAR</button>
+<button class="btn" onClick="alrts()">SUBMIT</button>
+<button class="btn" onClick="alrtc()">CLEAR</button>
             </div>
         </form>
     </div>
 </body>
 </html>
+<script>
+    function alrts(){
+        var text= "Your Responses are Submitted Successfully!";
+        alert(text);
+    }
+
+    function alrtc(){
+        var mytext = "Your Responses are Cancelled!";
+        alert(mytext);
+    }
+</script>
+

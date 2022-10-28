@@ -11,12 +11,13 @@
 
 }
 .container{
-    border: 10px solid rgb(77, 159, 77);
-    margin: 106px 86px  ;
+    border: 10px rgb(2, 2, 85);
+    margin: 35px 325px 0px  ;
     padding: 72px 72px 72px 72px ;
     width: 33%;
     border-radius: 22px;
     color: rgb(126, 95, 54);
+    background-color: rgb(229, 240, 240);
 }
 .container button{
     display: block;
@@ -25,6 +26,7 @@
 }
 .container h1{
     text-align: center;
+    margin: 1px;
 }
 .btn{
     font-family: 'Baloo Bhaijaan 2', cursive;
@@ -37,11 +39,11 @@
     cursor: pointer;
     border-radius: 10px;
 }
-.btn.hover{
+.btn:hover{
     background-color: rgb(141, 216, 185);
-  
     
 }
 body{
     color: rgb(158, 93, 14);
+    background-color:rgb(92, 117, 162);
 }
